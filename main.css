@@ -1,0 +1,20 @@
+#collapse-description p.collapse {
+    height: 100px !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+#collapse-description p.collapse.show {
+    height: 100% !important;
+    display: block;
+}
+
+#collapse-description a.collapsed:after {
+    content: '+ Show More';
+}
+
+#collapse-description a:not(.collapsed):after {
+    content: '- Show Less';
+}
